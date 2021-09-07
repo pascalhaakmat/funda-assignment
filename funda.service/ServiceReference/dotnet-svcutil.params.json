@@ -6,7 +6,7 @@
       "http://partnerapi.funda.nl/feeds/Aanbod.svc"
     ],
     "namespaceMappings": [
-      "*, funda.Services"
+      "*, funda.service"
     ],
     "outputFile": "Reference.cs",
     "targetFramework": "net5.0",

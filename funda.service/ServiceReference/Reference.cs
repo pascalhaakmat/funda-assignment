@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace funda.Services
+namespace funda.service
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://funda.nl/api/2009-03-16", ConfigurationName="funda.Services.IAanbod")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://funda.nl/api/2009-03-16", ConfigurationName="funda.service.IAanbod")]
     public interface IAanbod
     {
         
@@ -20,307 +20,307 @@ namespace funda.Services
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ZoekRecentAanbodResponse> ZoekRecentAanbodAsync(funda.Services.ZoekRecentAanbodRequest request);
+        System.Threading.Tasks.Task<funda.service.ZoekRecentAanbodResponse> ZoekRecentAanbodAsync(funda.service.ZoekRecentAanbodRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ZoekLocatie", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ZoekLocatieResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ZoekLocatieResponse> ZoekLocatieAsync(funda.Services.ZoekLocatieRequest request);
+        System.Threading.Tasks.Task<funda.service.ZoekLocatieResponse> ZoekLocatieAsync(funda.service.ZoekLocatieRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailKoop", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailKoopResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailKoopResponse> DetailKoopAsync(funda.Services.DetailKoopRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailKoopResponse> DetailKoopAsync(funda.service.DetailKoopRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailHuur", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailHuurResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailHuurResponse> DetailHuurAsync(funda.Services.DetailHuurRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailHuurResponse> DetailHuurAsync(funda.service.DetailHuurRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailBog", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailBogResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailBogResponse> DetailBogAsync(funda.Services.DetailBogRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailBogResponse> DetailBogAsync(funda.service.DetailBogRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailRecreatie", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailRecreatieResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailRecreatieResponse> DetailRecreatieAsync(funda.Services.DetailRecreatieRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailRecreatieResponse> DetailRecreatieAsync(funda.service.DetailRecreatieRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailAlgemeen", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailAlgemeenResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailAlgemeenResponse> DetailAlgemeenAsync(funda.Services.DetailAlgemeenRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailAlgemeenResponse> DetailAlgemeenAsync(funda.service.DetailAlgemeenRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailKoopByGlobalId", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailKoopByGlobalIdResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailKoopByGlobalIdResponse> DetailKoopByGlobalIdAsync(funda.Services.DetailKoopByGlobalIdRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailKoopByGlobalIdResponse> DetailKoopByGlobalIdAsync(funda.service.DetailKoopByGlobalIdRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailNieuwbouwByGlobalId", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailNieuwbouwByGlobalIdResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailNieuwbouwByGlobalIdResponse> DetailNieuwbouwByGlobalIdAsync(funda.Services.DetailNieuwbouwByGlobalIdRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailNieuwbouwByGlobalIdResponse> DetailNieuwbouwByGlobalIdAsync(funda.service.DetailNieuwbouwByGlobalIdRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailHuurByGlobalId", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailHuurByGlobalIdResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailHuurByGlobalIdResponse> DetailHuurByGlobalIdAsync(funda.Services.DetailHuurByGlobalIdRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailHuurByGlobalIdResponse> DetailHuurByGlobalIdAsync(funda.service.DetailHuurByGlobalIdRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailBogByGlobalId", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailBogByGlobalIdResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailBogByGlobalIdResponse> DetailBogByGlobalIdAsync(funda.Services.DetailBogByGlobalIdRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailBogByGlobalIdResponse> DetailBogByGlobalIdAsync(funda.service.DetailBogByGlobalIdRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ZoekAanbod", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ZoekAanbodResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ZoekAanbodResponse> ZoekAanbodAsync(funda.Services.ZoekAanbodRequest request);
+        System.Threading.Tasks.Task<funda.service.ZoekAanbodResponse> ZoekAanbodAsync(funda.service.ZoekAanbodRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ChromecastProperty", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ChromecastPropertyResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ChromecastPropertyResponse> ChromecastPropertyAsync(funda.Services.ChromecastPropertyRequest request);
+        System.Threading.Tasks.Task<funda.service.ChromecastPropertyResponse> ChromecastPropertyAsync(funda.service.ChromecastPropertyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/MapProperty", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/MapPropertyResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.MapPropertyResponse> MapPropertyAsync(funda.Services.MapPropertyRequest request);
+        System.Threading.Tasks.Task<funda.service.MapPropertyResponse> MapPropertyAsync(funda.service.MapPropertyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SearchProperty", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SearchPropertyResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SearchPropertyResponse> SearchPropertyAsync(funda.Services.SearchPropertyRequest request);
+        System.Threading.Tasks.Task<funda.service.SearchPropertyResponse> SearchPropertyAsync(funda.service.SearchPropertyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SearchSoldProperty", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SearchSoldPropertyResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyResponse> SearchSoldPropertyAsync(funda.Services.SearchSoldPropertyRequest request);
+        System.Threading.Tasks.Task<funda.service.SearchSoldPropertyResponse> SearchSoldPropertyAsync(funda.service.SearchSoldPropertyRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SearchSoldPropertyLocation", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SearchSoldPropertyLocationResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyLocationResponse> SearchSoldPropertyLocationAsync(funda.Services.SearchSoldPropertyLocationRequest request);
+        System.Threading.Tasks.Task<funda.service.SearchSoldPropertyLocationResponse> SearchSoldPropertyLocationAsync(funda.service.SearchSoldPropertyLocationRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SearchSoldPropertyLocationJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SearchSoldPropertyLocationJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyLocationJsonResponse> SearchSoldPropertyLocationJsonAsync(funda.Services.SearchSoldPropertyLocationJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.SearchSoldPropertyLocationJsonResponse> SearchSoldPropertyLocationJsonAsync(funda.service.SearchSoldPropertyLocationJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SearchPropertyLocation", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SearchPropertyLocationResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SearchPropertyLocationResponse> SearchPropertyLocationAsync(funda.Services.SearchPropertyLocationRequest request);
+        System.Threading.Tasks.Task<funda.service.SearchPropertyLocationResponse> SearchPropertyLocationAsync(funda.service.SearchPropertyLocationRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SearchPropertyLocationJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SearchPropertyLocationJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SearchPropertyLocationJsonResponse> SearchPropertyLocationJsonAsync(funda.Services.SearchPropertyLocationJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.SearchPropertyLocationJsonResponse> SearchPropertyLocationJsonAsync(funda.service.SearchPropertyLocationJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SearchSoldPropertyJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SearchSoldPropertyJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyJsonResponse> SearchSoldPropertyJsonAsync(funda.Services.SearchSoldPropertyJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.SearchSoldPropertyJsonResponse> SearchSoldPropertyJsonAsync(funda.service.SearchSoldPropertyJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SearchPropertyJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SearchPropertyJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SearchPropertyJsonResponse> SearchPropertyJsonAsync(funda.Services.SearchPropertyJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.SearchPropertyJsonResponse> SearchPropertyJsonAsync(funda.service.SearchPropertyJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SearchPropertyRss", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SearchPropertyRssResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SearchPropertyRssResponse> SearchPropertyRssAsync(funda.Services.SearchPropertyRssRequest request);
+        System.Threading.Tasks.Task<funda.service.SearchPropertyRssResponse> SearchPropertyRssAsync(funda.service.SearchPropertyRssRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ZoekAanbodRss", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ZoekAanbodRssResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ZoekAanbodRssResponse> ZoekAanbodRssAsync(funda.Services.ZoekAanbodRssRequest request);
+        System.Threading.Tasks.Task<funda.service.ZoekAanbodRssResponse> ZoekAanbodRssAsync(funda.service.ZoekAanbodRssRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ContactBezichtiging", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ContactBezichtigingResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ContactBezichtigingResponse> ContactBezichtigingAsync(funda.Services.ContactBezichtigingRequest request);
+        System.Threading.Tasks.Task<funda.service.ContactBezichtigingResponse> ContactBezichtigingAsync(funda.service.ContactBezichtigingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ContactReactie", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ContactReactieResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ContactReactieResponse> ContactReactieAsync(funda.Services.ContactReactieRequest request);
+        System.Threading.Tasks.Task<funda.service.ContactReactieResponse> ContactReactieAsync(funda.service.ContactReactieRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ContactTelefoon", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ContactTelefoonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ContactTelefoonResponse> ContactTelefoonAsync(funda.Services.ContactTelefoonRequest request);
+        System.Threading.Tasks.Task<funda.service.ContactTelefoonResponse> ContactTelefoonAsync(funda.service.ContactTelefoonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ContactAanvraagBrochure", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ContactAanvraagBrochureResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ContactAanvraagBrochureResponse> ContactAanvraagBrochureAsync(funda.Services.ContactAanvraagBrochureRequest request);
+        System.Threading.Tasks.Task<funda.service.ContactAanvraagBrochureResponse> ContactAanvraagBrochureAsync(funda.service.ContactAanvraagBrochureRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ContactProjectWebsite", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ContactProjectWebsiteResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ContactProjectWebsiteResponse> ContactProjectWebsiteAsync(funda.Services.ContactProjectWebsiteRequest request);
+        System.Threading.Tasks.Task<funda.service.ContactProjectWebsiteResponse> ContactProjectWebsiteAsync(funda.service.ContactProjectWebsiteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ContactInschrijfformulier", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ContactInschrijfformulierResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ContactInschrijfformulierResponse> ContactInschrijfformulierAsync(funda.Services.ContactInschrijfformulierRequest request);
+        System.Threading.Tasks.Task<funda.service.ContactInschrijfformulierResponse> ContactInschrijfformulierAsync(funda.service.ContactInschrijfformulierRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/RegistreerStatistieken", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/RegistreerStatistiekenResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.RegistreerStatistiekenResponse> RegistreerStatistiekenAsync(funda.Services.RegistreerStatistiekenRequest request);
+        System.Threading.Tasks.Task<funda.service.RegistreerStatistiekenResponse> RegistreerStatistiekenAsync(funda.service.RegistreerStatistiekenRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ZoekRecentAanbodJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ZoekRecentAanbodJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ZoekRecentAanbodJsonResponse> ZoekRecentAanbodJsonAsync(funda.Services.ZoekRecentAanbodJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.ZoekRecentAanbodJsonResponse> ZoekRecentAanbodJsonAsync(funda.service.ZoekRecentAanbodJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ZoekLocatieJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ZoekLocatieJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ZoekLocatieJsonResponse> ZoekLocatieJsonAsync(funda.Services.ZoekLocatieJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.ZoekLocatieJsonResponse> ZoekLocatieJsonAsync(funda.service.ZoekLocatieJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailKoopJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailKoopJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailKoopJsonResponse> DetailKoopJsonAsync(funda.Services.DetailKoopJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailKoopJsonResponse> DetailKoopJsonAsync(funda.service.DetailKoopJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailNieuwbouwJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailNieuwbouwJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailNieuwbouwJsonResponse> DetailNieuwbouwJsonAsync(funda.Services.DetailNieuwbouwJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailNieuwbouwJsonResponse> DetailNieuwbouwJsonAsync(funda.service.DetailNieuwbouwJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailHuurJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailHuurJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailHuurJsonResponse> DetailHuurJsonAsync(funda.Services.DetailHuurJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailHuurJsonResponse> DetailHuurJsonAsync(funda.service.DetailHuurJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailBogJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailBogJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailBogJsonResponse> DetailBogJsonAsync(funda.Services.DetailBogJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailBogJsonResponse> DetailBogJsonAsync(funda.service.DetailBogJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/DetailRecreatieJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/DetailRecreatieJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.DetailRecreatieJsonResponse> DetailRecreatieJsonAsync(funda.Services.DetailRecreatieJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.DetailRecreatieJsonResponse> DetailRecreatieJsonAsync(funda.service.DetailRecreatieJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ZoekAanbodJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ZoekAanbodJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ZoekAanbodJsonResponse> ZoekAanbodJsonAsync(funda.Services.ZoekAanbodJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.ZoekAanbodJsonResponse> ZoekAanbodJsonAsync(funda.service.ZoekAanbodJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/LogFoutmelding", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/LogFoutmeldingResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.LogFoutmeldingResponse> LogFoutmeldingAsync(funda.Services.LogFoutmeldingRequest request);
+        System.Threading.Tasks.Task<funda.service.LogFoutmeldingResponse> LogFoutmeldingAsync(funda.service.LogFoutmeldingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/LogFoutmeldingJson", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/LogFoutmeldingJsonResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.LogFoutmeldingJsonResponse> LogFoutmeldingJsonAsync(funda.Services.LogFoutmeldingJsonRequest request);
+        System.Threading.Tasks.Task<funda.service.LogFoutmeldingJsonResponse> LogFoutmeldingJsonAsync(funda.service.LogFoutmeldingJsonRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/ShareObject", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/ShareObjectResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.ShareObjectResponse> ShareObjectAsync(funda.Services.ShareObjectRequest request);
+        System.Threading.Tasks.Task<funda.service.ShareObjectResponse> ShareObjectAsync(funda.service.ShareObjectRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/Get360Photos", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/Get360PhotosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.Get360PhotosResponse> Get360PhotosAsync(funda.Services.Get360PhotosRequest request);
+        System.Threading.Tasks.Task<funda.service.Get360PhotosResponse> Get360PhotosAsync(funda.service.Get360PhotosRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/GetFloorplan", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/GetFloorplanResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.GetFloorplanResponse> GetFloorplanAsync(funda.Services.GetFloorplanRequest request);
+        System.Threading.Tasks.Task<funda.service.GetFloorplanResponse> GetFloorplanAsync(funda.service.GetFloorplanRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/GetFloorplanHtml5", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/GetFloorplanHtml5Response")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.GetFloorplanHtml5Response> GetFloorplanHtml5Async(funda.Services.GetFloorplanHtml5Request request);
+        System.Threading.Tasks.Task<funda.service.GetFloorplanHtml5Response> GetFloorplanHtml5Async(funda.service.GetFloorplanHtml5Request request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/GetNextVideoForAssessment", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/GetNextVideoForAssessmentResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.GetNextVideoForAssessmentResponse> GetNextVideoForAssessmentAsync(funda.Services.GetNextVideoForAssessmentRequest request);
+        System.Threading.Tasks.Task<funda.service.GetNextVideoForAssessmentResponse> GetNextVideoForAssessmentAsync(funda.service.GetNextVideoForAssessmentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SaveAssessment", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SaveAssessmentResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SaveAssessmentResponse> SaveAssessmentAsync(funda.Services.SaveAssessmentRequest request);
+        System.Threading.Tasks.Task<funda.service.SaveAssessmentResponse> SaveAssessmentAsync(funda.service.SaveAssessmentRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/GetToppositieObjects", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/GetToppositieObjectsResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.GetToppositieObjectsResponse> GetToppositieObjectsAsync(funda.Services.GetToppositieObjectsRequest request);
+        System.Threading.Tasks.Task<funda.service.GetToppositieObjectsResponse> GetToppositieObjectsAsync(funda.service.GetToppositieObjectsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SubmitReageerForm", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SubmitReageerFormResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SubmitReageerFormResponse> SubmitReageerFormAsync(funda.Services.SubmitReageerFormRequest request);
+        System.Threading.Tasks.Task<funda.service.SubmitReageerFormResponse> SubmitReageerFormAsync(funda.service.SubmitReageerFormRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SubmitBezichtigingForm", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SubmitBezichtigingFormResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SubmitBezichtigingFormResponse> SubmitBezichtigingFormAsync(funda.Services.SubmitBezichtigingFormRequest request);
+        System.Threading.Tasks.Task<funda.service.SubmitBezichtigingFormResponse> SubmitBezichtigingFormAsync(funda.service.SubmitBezichtigingFormRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://funda.nl/api/2009-03-16/IAanbod/SubmitBrochureAanvraagForm", ReplyAction="http://funda.nl/api/2009-03-16/IAanbod/SubmitBrochureAanvraagFormResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DetailBase))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ValidationError))]
-        System.Threading.Tasks.Task<funda.Services.SubmitBrochureAanvraagFormResponse> SubmitBrochureAanvraagFormAsync(funda.Services.SubmitBrochureAanvraagFormRequest request);
+        System.Threading.Tasks.Task<funda.service.SubmitBrochureAanvraagFormResponse> SubmitBrochureAanvraagFormAsync(funda.service.SubmitBrochureAanvraagFormRequest request);
     }
     
     /// <remarks/>
@@ -16026,13 +16026,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.feed ZoekRecentAanbodResult;
+        public funda.service.feed ZoekRecentAanbodResult;
         
         public ZoekRecentAanbodResponse()
         {
         }
         
-        public ZoekRecentAanbodResponse(funda.Services.feed ZoekRecentAanbodResult)
+        public ZoekRecentAanbodResponse(funda.service.feed ZoekRecentAanbodResult)
         {
             this.ZoekRecentAanbodResult = ZoekRecentAanbodResult;
         }
@@ -16083,13 +16083,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed ZoekLocatieResult;
+        public funda.service.LocatieFeed ZoekLocatieResult;
         
         public ZoekLocatieResponse()
         {
         }
         
-        public ZoekLocatieResponse(funda.Services.LocatieFeed ZoekLocatieResult)
+        public ZoekLocatieResponse(funda.service.LocatieFeed ZoekLocatieResult)
         {
             this.ZoekLocatieResult = ZoekLocatieResult;
         }
@@ -16135,13 +16135,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.KoopObject DetailKoopResult;
+        public funda.service.KoopObject DetailKoopResult;
         
         public DetailKoopResponse()
         {
         }
         
-        public DetailKoopResponse(funda.Services.KoopObject DetailKoopResult)
+        public DetailKoopResponse(funda.service.KoopObject DetailKoopResult)
         {
             this.DetailKoopResult = DetailKoopResult;
         }
@@ -16187,13 +16187,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.HuurObject DetailHuurResult;
+        public funda.service.HuurObject DetailHuurResult;
         
         public DetailHuurResponse()
         {
         }
         
-        public DetailHuurResponse(funda.Services.HuurObject DetailHuurResult)
+        public DetailHuurResponse(funda.service.HuurObject DetailHuurResult)
         {
             this.DetailHuurResult = DetailHuurResult;
         }
@@ -16244,13 +16244,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.DetailBog DetailBogResult;
+        public funda.service.DetailBog DetailBogResult;
         
         public DetailBogResponse()
         {
         }
         
-        public DetailBogResponse(funda.Services.DetailBog DetailBogResult)
+        public DetailBogResponse(funda.service.DetailBog DetailBogResult)
         {
             this.DetailBogResult = DetailBogResult;
         }
@@ -16296,13 +16296,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.RecreatieObject DetailRecreatieResult;
+        public funda.service.RecreatieObject DetailRecreatieResult;
         
         public DetailRecreatieResponse()
         {
         }
         
-        public DetailRecreatieResponse(funda.Services.RecreatieObject DetailRecreatieResult)
+        public DetailRecreatieResponse(funda.service.RecreatieObject DetailRecreatieResult)
         {
             this.DetailRecreatieResult = DetailRecreatieResult;
         }
@@ -16348,13 +16348,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.AlgemeenObject DetailAlgemeenResult;
+        public funda.service.AlgemeenObject DetailAlgemeenResult;
         
         public DetailAlgemeenResponse()
         {
         }
         
-        public DetailAlgemeenResponse(funda.Services.AlgemeenObject DetailAlgemeenResult)
+        public DetailAlgemeenResponse(funda.service.AlgemeenObject DetailAlgemeenResult)
         {
             this.DetailAlgemeenResult = DetailAlgemeenResult;
         }
@@ -16400,13 +16400,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.KoopObject DetailKoopByGlobalIdResult;
+        public funda.service.KoopObject DetailKoopByGlobalIdResult;
         
         public DetailKoopByGlobalIdResponse()
         {
         }
         
-        public DetailKoopByGlobalIdResponse(funda.Services.KoopObject DetailKoopByGlobalIdResult)
+        public DetailKoopByGlobalIdResponse(funda.service.KoopObject DetailKoopByGlobalIdResult)
         {
             this.DetailKoopByGlobalIdResult = DetailKoopByGlobalIdResult;
         }
@@ -16452,13 +16452,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.NieuwbouwObject DetailNieuwbouwByGlobalIdResult;
+        public funda.service.NieuwbouwObject DetailNieuwbouwByGlobalIdResult;
         
         public DetailNieuwbouwByGlobalIdResponse()
         {
         }
         
-        public DetailNieuwbouwByGlobalIdResponse(funda.Services.NieuwbouwObject DetailNieuwbouwByGlobalIdResult)
+        public DetailNieuwbouwByGlobalIdResponse(funda.service.NieuwbouwObject DetailNieuwbouwByGlobalIdResult)
         {
             this.DetailNieuwbouwByGlobalIdResult = DetailNieuwbouwByGlobalIdResult;
         }
@@ -16504,13 +16504,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.HuurObject DetailHuurByGlobalIdResult;
+        public funda.service.HuurObject DetailHuurByGlobalIdResult;
         
         public DetailHuurByGlobalIdResponse()
         {
         }
         
-        public DetailHuurByGlobalIdResponse(funda.Services.HuurObject DetailHuurByGlobalIdResult)
+        public DetailHuurByGlobalIdResponse(funda.service.HuurObject DetailHuurByGlobalIdResult)
         {
             this.DetailHuurByGlobalIdResult = DetailHuurByGlobalIdResult;
         }
@@ -16561,13 +16561,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.DetailBog DetailBogByGlobalIdResult;
+        public funda.service.DetailBog DetailBogByGlobalIdResult;
         
         public DetailBogByGlobalIdResponse()
         {
         }
         
-        public DetailBogByGlobalIdResponse(funda.Services.DetailBog DetailBogByGlobalIdResult)
+        public DetailBogByGlobalIdResponse(funda.service.DetailBog DetailBogByGlobalIdResult)
         {
             this.DetailBogByGlobalIdResult = DetailBogByGlobalIdResult;
         }
@@ -16637,13 +16637,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed ZoekAanbodResult;
+        public funda.service.LocatieFeed ZoekAanbodResult;
         
         public ZoekAanbodResponse()
         {
         }
         
-        public ZoekAanbodResponse(funda.Services.LocatieFeed ZoekAanbodResult)
+        public ZoekAanbodResponse(funda.service.LocatieFeed ZoekAanbodResult)
         {
             this.ZoekAanbodResult = ZoekAanbodResult;
         }
@@ -16661,7 +16661,7 @@ namespace funda.Services
         public string key;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
-        public funda.Services.Website website;
+        public funda.service.Website website;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -16675,7 +16675,7 @@ namespace funda.Services
         {
         }
         
-        public ChromecastPropertyRequest(string key, funda.Services.Website website, string makelaarId, string page)
+        public ChromecastPropertyRequest(string key, funda.service.Website website, string makelaarId, string page)
         {
             this.key = key;
             this.website = website;
@@ -16693,13 +16693,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.ChromecastFeed ChromecastPropertyResult;
+        public funda.service.ChromecastFeed ChromecastPropertyResult;
         
         public ChromecastPropertyResponse()
         {
         }
         
-        public ChromecastPropertyResponse(funda.Services.ChromecastFeed ChromecastPropertyResult)
+        public ChromecastPropertyResponse(funda.service.ChromecastFeed ChromecastPropertyResult)
         {
             this.ChromecastPropertyResult = ChromecastPropertyResult;
         }
@@ -16717,7 +16717,7 @@ namespace funda.Services
         public string key;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
-        public funda.Services.Website website;
+        public funda.service.Website website;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         public bool isHistorisch;
@@ -16728,13 +16728,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=4)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.MapDetails mapDetails;
+        public funda.service.MapDetails mapDetails;
         
         public MapPropertyRequest()
         {
         }
         
-        public MapPropertyRequest(string key, funda.Services.Website website, bool isHistorisch, string statistiekId, funda.Services.MapDetails mapDetails)
+        public MapPropertyRequest(string key, funda.service.Website website, bool isHistorisch, string statistiekId, funda.service.MapDetails mapDetails)
         {
             this.key = key;
             this.website = website;
@@ -16753,13 +16753,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.MapFeed MapPropertyResult;
+        public funda.service.MapFeed MapPropertyResult;
         
         public MapPropertyResponse()
         {
         }
         
-        public MapPropertyResponse(funda.Services.MapFeed MapPropertyResult)
+        public MapPropertyResponse(funda.service.MapFeed MapPropertyResult)
         {
             this.MapPropertyResult = MapPropertyResult;
         }
@@ -16777,7 +16777,7 @@ namespace funda.Services
         public string key;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
-        public funda.Services.Website website;
+        public funda.service.Website website;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -16813,7 +16813,7 @@ namespace funda.Services
         {
         }
         
-        public SearchPropertyRequest(string key, funda.Services.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen, bool objectTypenTonen)
+        public SearchPropertyRequest(string key, funda.service.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen, bool objectTypenTonen)
         {
             this.key = key;
             this.website = website;
@@ -16837,13 +16837,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed SearchPropertyResult;
+        public funda.service.LocatieFeed SearchPropertyResult;
         
         public SearchPropertyResponse()
         {
         }
         
-        public SearchPropertyResponse(funda.Services.LocatieFeed SearchPropertyResult)
+        public SearchPropertyResponse(funda.service.LocatieFeed SearchPropertyResult)
         {
             this.SearchPropertyResult = SearchPropertyResult;
         }
@@ -16861,7 +16861,7 @@ namespace funda.Services
         public string key;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
-        public funda.Services.Website website;
+        public funda.service.Website website;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -16894,7 +16894,7 @@ namespace funda.Services
         {
         }
         
-        public SearchSoldPropertyRequest(string key, funda.Services.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
+        public SearchSoldPropertyRequest(string key, funda.service.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
         {
             this.key = key;
             this.website = website;
@@ -16917,13 +16917,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed SearchSoldPropertyResult;
+        public funda.service.LocatieFeed SearchSoldPropertyResult;
         
         public SearchSoldPropertyResponse()
         {
         }
         
-        public SearchSoldPropertyResponse(funda.Services.LocatieFeed SearchSoldPropertyResult)
+        public SearchSoldPropertyResponse(funda.service.LocatieFeed SearchSoldPropertyResult)
         {
             this.SearchSoldPropertyResult = SearchSoldPropertyResult;
         }
@@ -16974,13 +16974,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed SearchSoldPropertyLocationResult;
+        public funda.service.LocatieFeed SearchSoldPropertyLocationResult;
         
         public SearchSoldPropertyLocationResponse()
         {
         }
         
-        public SearchSoldPropertyLocationResponse(funda.Services.LocatieFeed SearchSoldPropertyLocationResult)
+        public SearchSoldPropertyLocationResponse(funda.service.LocatieFeed SearchSoldPropertyLocationResult)
         {
             this.SearchSoldPropertyLocationResult = SearchSoldPropertyLocationResult;
         }
@@ -17031,13 +17031,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed SearchSoldPropertyLocationJsonResult;
+        public funda.service.LocatieFeed SearchSoldPropertyLocationJsonResult;
         
         public SearchSoldPropertyLocationJsonResponse()
         {
         }
         
-        public SearchSoldPropertyLocationJsonResponse(funda.Services.LocatieFeed SearchSoldPropertyLocationJsonResult)
+        public SearchSoldPropertyLocationJsonResponse(funda.service.LocatieFeed SearchSoldPropertyLocationJsonResult)
         {
             this.SearchSoldPropertyLocationJsonResult = SearchSoldPropertyLocationJsonResult;
         }
@@ -17088,13 +17088,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed SearchPropertyLocationResult;
+        public funda.service.LocatieFeed SearchPropertyLocationResult;
         
         public SearchPropertyLocationResponse()
         {
         }
         
-        public SearchPropertyLocationResponse(funda.Services.LocatieFeed SearchPropertyLocationResult)
+        public SearchPropertyLocationResponse(funda.service.LocatieFeed SearchPropertyLocationResult)
         {
             this.SearchPropertyLocationResult = SearchPropertyLocationResult;
         }
@@ -17112,7 +17112,7 @@ namespace funda.Services
         public string key;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
-        public funda.Services.Website website;
+        public funda.service.Website website;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -17130,7 +17130,7 @@ namespace funda.Services
         {
         }
         
-        public SearchPropertyLocationJsonRequest(string key, funda.Services.Website website, string aanbodType, string zoekPad, string statistiekId)
+        public SearchPropertyLocationJsonRequest(string key, funda.service.Website website, string aanbodType, string zoekPad, string statistiekId)
         {
             this.key = key;
             this.website = website;
@@ -17149,13 +17149,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed SearchPropertyLocationJsonResult;
+        public funda.service.LocatieFeed SearchPropertyLocationJsonResult;
         
         public SearchPropertyLocationJsonResponse()
         {
         }
         
-        public SearchPropertyLocationJsonResponse(funda.Services.LocatieFeed SearchPropertyLocationJsonResult)
+        public SearchPropertyLocationJsonResponse(funda.service.LocatieFeed SearchPropertyLocationJsonResult)
         {
             this.SearchPropertyLocationJsonResult = SearchPropertyLocationJsonResult;
         }
@@ -17173,7 +17173,7 @@ namespace funda.Services
         public string key;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
-        public funda.Services.Website website;
+        public funda.service.Website website;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -17206,7 +17206,7 @@ namespace funda.Services
         {
         }
         
-        public SearchSoldPropertyJsonRequest(string key, funda.Services.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
+        public SearchSoldPropertyJsonRequest(string key, funda.service.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
         {
             this.key = key;
             this.website = website;
@@ -17229,13 +17229,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed SearchSoldPropertyJsonResult;
+        public funda.service.LocatieFeed SearchSoldPropertyJsonResult;
         
         public SearchSoldPropertyJsonResponse()
         {
         }
         
-        public SearchSoldPropertyJsonResponse(funda.Services.LocatieFeed SearchSoldPropertyJsonResult)
+        public SearchSoldPropertyJsonResponse(funda.service.LocatieFeed SearchSoldPropertyJsonResult)
         {
             this.SearchSoldPropertyJsonResult = SearchSoldPropertyJsonResult;
         }
@@ -17253,7 +17253,7 @@ namespace funda.Services
         public string key;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
-        public funda.Services.Website website;
+        public funda.service.Website website;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -17289,7 +17289,7 @@ namespace funda.Services
         {
         }
         
-        public SearchPropertyJsonRequest(string key, funda.Services.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen, bool objectTypenTonen)
+        public SearchPropertyJsonRequest(string key, funda.service.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen, bool objectTypenTonen)
         {
             this.key = key;
             this.website = website;
@@ -17313,13 +17313,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed SearchPropertyJsonResult;
+        public funda.service.LocatieFeed SearchPropertyJsonResult;
         
         public SearchPropertyJsonResponse()
         {
         }
         
-        public SearchPropertyJsonResponse(funda.Services.LocatieFeed SearchPropertyJsonResult)
+        public SearchPropertyJsonResponse(funda.service.LocatieFeed SearchPropertyJsonResult)
         {
             this.SearchPropertyJsonResult = SearchPropertyJsonResult;
         }
@@ -17333,7 +17333,7 @@ namespace funda.Services
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
-        public funda.Services.Website website;
+        public funda.service.Website website;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -17347,7 +17347,7 @@ namespace funda.Services
         {
         }
         
-        public SearchPropertyRssRequest(funda.Services.Website website, string aanbodType, string zoekPad)
+        public SearchPropertyRssRequest(funda.service.Website website, string aanbodType, string zoekPad)
         {
             this.website = website;
             this.aanbodType = aanbodType;
@@ -17364,13 +17364,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.ArrayOfXElement SearchPropertyRssResult;
+        public funda.service.ArrayOfXElement SearchPropertyRssResult;
         
         public SearchPropertyRssResponse()
         {
         }
         
-        public SearchPropertyRssResponse(funda.Services.ArrayOfXElement SearchPropertyRssResult)
+        public SearchPropertyRssResponse(funda.service.ArrayOfXElement SearchPropertyRssResult)
         {
             this.SearchPropertyRssResult = SearchPropertyRssResult;
         }
@@ -17411,13 +17411,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.ArrayOfXElement ZoekAanbodRssResult;
+        public funda.service.ArrayOfXElement ZoekAanbodRssResult;
         
         public ZoekAanbodRssResponse()
         {
         }
         
-        public ZoekAanbodRssResponse(funda.Services.ArrayOfXElement ZoekAanbodRssResult)
+        public ZoekAanbodRssResponse(funda.service.ArrayOfXElement ZoekAanbodRssResult)
         {
             this.ZoekAanbodRssResult = ZoekAanbodRssResult;
         }
@@ -17440,13 +17440,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.AanbodContactBezichtigingRequest bezichtiging;
+        public funda.service.AanbodContactBezichtigingRequest bezichtiging;
         
         public ContactBezichtigingRequest()
         {
         }
         
-        public ContactBezichtigingRequest(string key, string globalId, funda.Services.AanbodContactBezichtigingRequest bezichtiging)
+        public ContactBezichtigingRequest(string key, string globalId, funda.service.AanbodContactBezichtigingRequest bezichtiging)
         {
             this.key = key;
             this.globalId = globalId;
@@ -17491,13 +17491,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.AanbodContactReactieRequest reactie;
+        public funda.service.AanbodContactReactieRequest reactie;
         
         public ContactReactieRequest()
         {
         }
         
-        public ContactReactieRequest(string key, string globalId, funda.Services.AanbodContactReactieRequest reactie)
+        public ContactReactieRequest(string key, string globalId, funda.service.AanbodContactReactieRequest reactie)
         {
             this.key = key;
             this.globalId = globalId;
@@ -17593,13 +17593,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.AanbodContactBrochureAanvraagRequest brochureAanvraag;
+        public funda.service.AanbodContactBrochureAanvraagRequest brochureAanvraag;
         
         public ContactAanvraagBrochureRequest()
         {
         }
         
-        public ContactAanvraagBrochureRequest(string key, string globalId, funda.Services.AanbodContactBrochureAanvraagRequest brochureAanvraag)
+        public ContactAanvraagBrochureRequest(string key, string globalId, funda.service.AanbodContactBrochureAanvraagRequest brochureAanvraag)
         {
             this.key = key;
             this.globalId = globalId;
@@ -17827,13 +17827,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.feed ZoekRecentAanbodJsonResult;
+        public funda.service.feed ZoekRecentAanbodJsonResult;
         
         public ZoekRecentAanbodJsonResponse()
         {
         }
         
-        public ZoekRecentAanbodJsonResponse(funda.Services.feed ZoekRecentAanbodJsonResult)
+        public ZoekRecentAanbodJsonResponse(funda.service.feed ZoekRecentAanbodJsonResult)
         {
             this.ZoekRecentAanbodJsonResult = ZoekRecentAanbodJsonResult;
         }
@@ -17879,13 +17879,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed ZoekLocatieJsonResult;
+        public funda.service.LocatieFeed ZoekLocatieJsonResult;
         
         public ZoekLocatieJsonResponse()
         {
         }
         
-        public ZoekLocatieJsonResponse(funda.Services.LocatieFeed ZoekLocatieJsonResult)
+        public ZoekLocatieJsonResponse(funda.service.LocatieFeed ZoekLocatieJsonResult)
         {
             this.ZoekLocatieJsonResult = ZoekLocatieJsonResult;
         }
@@ -17926,13 +17926,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.KoopObject DetailKoopJsonResult;
+        public funda.service.KoopObject DetailKoopJsonResult;
         
         public DetailKoopJsonResponse()
         {
         }
         
-        public DetailKoopJsonResponse(funda.Services.KoopObject DetailKoopJsonResult)
+        public DetailKoopJsonResponse(funda.service.KoopObject DetailKoopJsonResult)
         {
             this.DetailKoopJsonResult = DetailKoopJsonResult;
         }
@@ -17973,13 +17973,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.NieuwbouwObject DetailNieuwbouwJsonResult;
+        public funda.service.NieuwbouwObject DetailNieuwbouwJsonResult;
         
         public DetailNieuwbouwJsonResponse()
         {
         }
         
-        public DetailNieuwbouwJsonResponse(funda.Services.NieuwbouwObject DetailNieuwbouwJsonResult)
+        public DetailNieuwbouwJsonResponse(funda.service.NieuwbouwObject DetailNieuwbouwJsonResult)
         {
             this.DetailNieuwbouwJsonResult = DetailNieuwbouwJsonResult;
         }
@@ -18020,13 +18020,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.HuurObject DetailHuurJsonResult;
+        public funda.service.HuurObject DetailHuurJsonResult;
         
         public DetailHuurJsonResponse()
         {
         }
         
-        public DetailHuurJsonResponse(funda.Services.HuurObject DetailHuurJsonResult)
+        public DetailHuurJsonResponse(funda.service.HuurObject DetailHuurJsonResult)
         {
             this.DetailHuurJsonResult = DetailHuurJsonResult;
         }
@@ -18072,13 +18072,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.DetailBog DetailBogJsonResult;
+        public funda.service.DetailBog DetailBogJsonResult;
         
         public DetailBogJsonResponse()
         {
         }
         
-        public DetailBogJsonResponse(funda.Services.DetailBog DetailBogJsonResult)
+        public DetailBogJsonResponse(funda.service.DetailBog DetailBogJsonResult)
         {
             this.DetailBogJsonResult = DetailBogJsonResult;
         }
@@ -18119,13 +18119,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.RecreatieObject DetailRecreatieJsonResult;
+        public funda.service.RecreatieObject DetailRecreatieJsonResult;
         
         public DetailRecreatieJsonResponse()
         {
         }
         
-        public DetailRecreatieJsonResponse(funda.Services.RecreatieObject DetailRecreatieJsonResult)
+        public DetailRecreatieJsonResponse(funda.service.RecreatieObject DetailRecreatieJsonResult)
         {
             this.DetailRecreatieJsonResult = DetailRecreatieJsonResult;
         }
@@ -18195,13 +18195,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.LocatieFeed ZoekAanbodJsonResult;
+        public funda.service.LocatieFeed ZoekAanbodJsonResult;
         
         public ZoekAanbodJsonResponse()
         {
         }
         
-        public ZoekAanbodJsonResponse(funda.Services.LocatieFeed ZoekAanbodJsonResult)
+        public ZoekAanbodJsonResponse(funda.service.LocatieFeed ZoekAanbodJsonResult)
         {
             this.ZoekAanbodJsonResult = ZoekAanbodJsonResult;
         }
@@ -18220,13 +18220,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.Foutmelding foutmelding;
+        public funda.service.Foutmelding foutmelding;
         
         public LogFoutmeldingRequest()
         {
         }
         
-        public LogFoutmeldingRequest(string key, funda.Services.Foutmelding foutmelding)
+        public LogFoutmeldingRequest(string key, funda.service.Foutmelding foutmelding)
         {
             this.key = key;
             this.foutmelding = foutmelding;
@@ -18242,13 +18242,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.FoutLogResult LogFoutmeldingResult;
+        public funda.service.FoutLogResult LogFoutmeldingResult;
         
         public LogFoutmeldingResponse()
         {
         }
         
-        public LogFoutmeldingResponse(funda.Services.FoutLogResult LogFoutmeldingResult)
+        public LogFoutmeldingResponse(funda.service.FoutLogResult LogFoutmeldingResult)
         {
             this.LogFoutmeldingResult = LogFoutmeldingResult;
         }
@@ -18267,13 +18267,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.Foutmelding foutmelding;
+        public funda.service.Foutmelding foutmelding;
         
         public LogFoutmeldingJsonRequest()
         {
         }
         
-        public LogFoutmeldingJsonRequest(string key, funda.Services.Foutmelding foutmelding)
+        public LogFoutmeldingJsonRequest(string key, funda.service.Foutmelding foutmelding)
         {
             this.key = key;
             this.foutmelding = foutmelding;
@@ -18289,13 +18289,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.FoutLogResult LogFoutmeldingJsonResult;
+        public funda.service.FoutLogResult LogFoutmeldingJsonResult;
         
         public LogFoutmeldingJsonResponse()
         {
         }
         
-        public LogFoutmeldingJsonResponse(funda.Services.FoutLogResult LogFoutmeldingJsonResult)
+        public LogFoutmeldingJsonResponse(funda.service.FoutLogResult LogFoutmeldingJsonResult)
         {
             this.LogFoutmeldingJsonResult = LogFoutmeldingJsonResult;
         }
@@ -18314,13 +18314,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.ShareObjectModel shareObject;
+        public funda.service.ShareObjectModel shareObject;
         
         public ShareObjectRequest()
         {
         }
         
-        public ShareObjectRequest(string key, funda.Services.ShareObjectModel shareObject)
+        public ShareObjectRequest(string key, funda.service.ShareObjectModel shareObject)
         {
             this.key = key;
             this.shareObject = shareObject;
@@ -18336,13 +18336,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.ShareObjectResponseModel ShareObjectResult;
+        public funda.service.ShareObjectResponseModel ShareObjectResult;
         
         public ShareObjectResponse()
         {
         }
         
-        public ShareObjectResponse(funda.Services.ShareObjectResponseModel ShareObjectResult)
+        public ShareObjectResponse(funda.service.ShareObjectResponseModel ShareObjectResult)
         {
             this.ShareObjectResult = ShareObjectResult;
         }
@@ -18367,13 +18367,13 @@ namespace funda.Services
         public string mediaId;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=3)]
-        public funda.Services.SoortAanbod soortAanbod;
+        public funda.service.SoortAanbod soortAanbod;
         
         public Get360PhotosRequest()
         {
         }
         
-        public Get360PhotosRequest(string key, long globalId, string mediaId, funda.Services.SoortAanbod soortAanbod)
+        public Get360PhotosRequest(string key, long globalId, string mediaId, funda.service.SoortAanbod soortAanbod)
         {
             this.key = key;
             this.globalId = globalId;
@@ -18392,13 +18392,13 @@ namespace funda.Services
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://funda.nl/api/feeds/2011-04-28")]
-        public funda.Services.MediaItem[] Get360PhotosResult;
+        public funda.service.MediaItem[] Get360PhotosResult;
         
         public Get360PhotosResponse()
         {
         }
         
-        public Get360PhotosResponse(funda.Services.MediaItem[] Get360PhotosResult)
+        public Get360PhotosResponse(funda.service.MediaItem[] Get360PhotosResult)
         {
             this.Get360PhotosResult = Get360PhotosResult;
         }
@@ -18419,13 +18419,13 @@ namespace funda.Services
         public long globalId;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
-        public funda.Services.SoortAanbod soortAanbod;
+        public funda.service.SoortAanbod soortAanbod;
         
         public GetFloorplanRequest()
         {
         }
         
-        public GetFloorplanRequest(string key, long globalId, funda.Services.SoortAanbod soortAanbod)
+        public GetFloorplanRequest(string key, long globalId, funda.service.SoortAanbod soortAanbod)
         {
             this.key = key;
             this.globalId = globalId;
@@ -18469,13 +18469,13 @@ namespace funda.Services
         public long globalId;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
-        public funda.Services.SoortAanbod soortAanbod;
+        public funda.service.SoortAanbod soortAanbod;
         
         public GetFloorplanHtml5Request()
         {
         }
         
-        public GetFloorplanHtml5Request(string key, long globalId, funda.Services.SoortAanbod soortAanbod)
+        public GetFloorplanHtml5Request(string key, long globalId, funda.service.SoortAanbod soortAanbod)
         {
             this.key = key;
             this.globalId = globalId;
@@ -18543,13 +18543,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.VideoDisplayInfo GetNextVideoForAssessmentResult;
+        public funda.service.VideoDisplayInfo GetNextVideoForAssessmentResult;
         
         public GetNextVideoForAssessmentResponse()
         {
         }
         
-        public GetNextVideoForAssessmentResponse(funda.Services.VideoDisplayInfo GetNextVideoForAssessmentResult)
+        public GetNextVideoForAssessmentResponse(funda.service.VideoDisplayInfo GetNextVideoForAssessmentResult)
         {
             this.GetNextVideoForAssessmentResult = GetNextVideoForAssessmentResult;
         }
@@ -18572,13 +18572,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.VideoAssessment videoAssessment;
+        public funda.service.VideoAssessment videoAssessment;
         
         public SaveAssessmentRequest()
         {
         }
         
-        public SaveAssessmentRequest(string key, string username, funda.Services.VideoAssessment videoAssessment)
+        public SaveAssessmentRequest(string key, string username, funda.service.VideoAssessment videoAssessment)
         {
             this.key = key;
             this.username = username;
@@ -18633,13 +18633,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.ToppositieFeed GetToppositieObjectsResult;
+        public funda.service.ToppositieFeed GetToppositieObjectsResult;
         
         public GetToppositieObjectsResponse()
         {
         }
         
-        public GetToppositieObjectsResponse(funda.Services.ToppositieFeed GetToppositieObjectsResult)
+        public GetToppositieObjectsResponse(funda.service.ToppositieFeed GetToppositieObjectsResult)
         {
             this.GetToppositieObjectsResult = GetToppositieObjectsResult;
         }
@@ -18658,13 +18658,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.ReageerPublishItem item;
+        public funda.service.ReageerPublishItem item;
         
         public SubmitReageerFormRequest()
         {
         }
         
-        public SubmitReageerFormRequest(string key, funda.Services.ReageerPublishItem item)
+        public SubmitReageerFormRequest(string key, funda.service.ReageerPublishItem item)
         {
             this.key = key;
             this.item = item;
@@ -18696,13 +18696,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.BezichtigingPublishItem item;
+        public funda.service.BezichtigingPublishItem item;
         
         public SubmitBezichtigingFormRequest()
         {
         }
         
-        public SubmitBezichtigingFormRequest(string key, funda.Services.BezichtigingPublishItem item)
+        public SubmitBezichtigingFormRequest(string key, funda.service.BezichtigingPublishItem item)
         {
             this.key = key;
             this.item = item;
@@ -18734,13 +18734,13 @@ namespace funda.Services
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://funda.nl/api/2009-03-16", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public funda.Services.BrochureAanvraagPublishItem item;
+        public funda.service.BrochureAanvraagPublishItem item;
         
         public SubmitBrochureAanvraagFormRequest()
         {
         }
         
-        public SubmitBrochureAanvraagFormRequest(string key, funda.Services.BrochureAanvraagPublishItem item)
+        public SubmitBrochureAanvraagFormRequest(string key, funda.service.BrochureAanvraagPublishItem item)
         {
             this.key = key;
             this.item = item;
@@ -18760,13 +18760,13 @@ namespace funda.Services
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    public interface IAanbodChannel : funda.Services.IAanbod, System.ServiceModel.IClientChannel
+    public interface IAanbodChannel : funda.service.IAanbod, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    public partial class AanbodClient : System.ServiceModel.ClientBase<funda.Services.IAanbod>, funda.Services.IAanbod
+    public partial class AanbodClient : System.ServiceModel.ClientBase<funda.service.IAanbod>, funda.service.IAanbod
     {
         
         /// <summary>
@@ -18803,185 +18803,185 @@ namespace funda.Services
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ZoekRecentAanbodResponse> funda.Services.IAanbod.ZoekRecentAanbodAsync(funda.Services.ZoekRecentAanbodRequest request)
+        System.Threading.Tasks.Task<funda.service.ZoekRecentAanbodResponse> funda.service.IAanbod.ZoekRecentAanbodAsync(funda.service.ZoekRecentAanbodRequest request)
         {
             return base.Channel.ZoekRecentAanbodAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ZoekRecentAanbodResponse> ZoekRecentAanbodAsync(string key, string aanbodType, string zoekPad, string since, string page, string pagesize)
+        public System.Threading.Tasks.Task<funda.service.ZoekRecentAanbodResponse> ZoekRecentAanbodAsync(string key, string aanbodType, string zoekPad, string since, string page, string pagesize)
         {
-            funda.Services.ZoekRecentAanbodRequest inValue = new funda.Services.ZoekRecentAanbodRequest();
+            funda.service.ZoekRecentAanbodRequest inValue = new funda.service.ZoekRecentAanbodRequest();
             inValue.key = key;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
             inValue.since = since;
             inValue.page = page;
             inValue.pagesize = pagesize;
-            return ((funda.Services.IAanbod)(this)).ZoekRecentAanbodAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ZoekRecentAanbodAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ZoekLocatieResponse> funda.Services.IAanbod.ZoekLocatieAsync(funda.Services.ZoekLocatieRequest request)
+        System.Threading.Tasks.Task<funda.service.ZoekLocatieResponse> funda.service.IAanbod.ZoekLocatieAsync(funda.service.ZoekLocatieRequest request)
         {
             return base.Channel.ZoekLocatieAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ZoekLocatieResponse> ZoekLocatieAsync(string key, string aanbodType, string zoekPad, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.ZoekLocatieResponse> ZoekLocatieAsync(string key, string aanbodType, string zoekPad, string statistiekId)
         {
-            funda.Services.ZoekLocatieRequest inValue = new funda.Services.ZoekLocatieRequest();
+            funda.service.ZoekLocatieRequest inValue = new funda.service.ZoekLocatieRequest();
             inValue.key = key;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).ZoekLocatieAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ZoekLocatieAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailKoopResponse> funda.Services.IAanbod.DetailKoopAsync(funda.Services.DetailKoopRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailKoopResponse> funda.service.IAanbod.DetailKoopAsync(funda.service.DetailKoopRequest request)
         {
             return base.Channel.DetailKoopAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailKoopResponse> DetailKoopAsync(string key, string internalid, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.DetailKoopResponse> DetailKoopAsync(string key, string internalid, string statistiekId)
         {
-            funda.Services.DetailKoopRequest inValue = new funda.Services.DetailKoopRequest();
+            funda.service.DetailKoopRequest inValue = new funda.service.DetailKoopRequest();
             inValue.key = key;
             inValue.internalid = internalid;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).DetailKoopAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailKoopAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailHuurResponse> funda.Services.IAanbod.DetailHuurAsync(funda.Services.DetailHuurRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailHuurResponse> funda.service.IAanbod.DetailHuurAsync(funda.service.DetailHuurRequest request)
         {
             return base.Channel.DetailHuurAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailHuurResponse> DetailHuurAsync(string key, string internalid, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.DetailHuurResponse> DetailHuurAsync(string key, string internalid, string statistiekId)
         {
-            funda.Services.DetailHuurRequest inValue = new funda.Services.DetailHuurRequest();
+            funda.service.DetailHuurRequest inValue = new funda.service.DetailHuurRequest();
             inValue.key = key;
             inValue.internalid = internalid;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).DetailHuurAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailHuurAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailBogResponse> funda.Services.IAanbod.DetailBogAsync(funda.Services.DetailBogRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailBogResponse> funda.service.IAanbod.DetailBogAsync(funda.service.DetailBogRequest request)
         {
             return base.Channel.DetailBogAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailBogResponse> DetailBogAsync(string key, string internalid, string soortaanbod, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.DetailBogResponse> DetailBogAsync(string key, string internalid, string soortaanbod, string statistiekId)
         {
-            funda.Services.DetailBogRequest inValue = new funda.Services.DetailBogRequest();
+            funda.service.DetailBogRequest inValue = new funda.service.DetailBogRequest();
             inValue.key = key;
             inValue.internalid = internalid;
             inValue.soortaanbod = soortaanbod;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).DetailBogAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailBogAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailRecreatieResponse> funda.Services.IAanbod.DetailRecreatieAsync(funda.Services.DetailRecreatieRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailRecreatieResponse> funda.service.IAanbod.DetailRecreatieAsync(funda.service.DetailRecreatieRequest request)
         {
             return base.Channel.DetailRecreatieAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailRecreatieResponse> DetailRecreatieAsync(string key, string internalid, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.DetailRecreatieResponse> DetailRecreatieAsync(string key, string internalid, string statistiekId)
         {
-            funda.Services.DetailRecreatieRequest inValue = new funda.Services.DetailRecreatieRequest();
+            funda.service.DetailRecreatieRequest inValue = new funda.service.DetailRecreatieRequest();
             inValue.key = key;
             inValue.internalid = internalid;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).DetailRecreatieAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailRecreatieAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailAlgemeenResponse> funda.Services.IAanbod.DetailAlgemeenAsync(funda.Services.DetailAlgemeenRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailAlgemeenResponse> funda.service.IAanbod.DetailAlgemeenAsync(funda.service.DetailAlgemeenRequest request)
         {
             return base.Channel.DetailAlgemeenAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailAlgemeenResponse> DetailAlgemeenAsync(string key, string globalid, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.DetailAlgemeenResponse> DetailAlgemeenAsync(string key, string globalid, string statistiekId)
         {
-            funda.Services.DetailAlgemeenRequest inValue = new funda.Services.DetailAlgemeenRequest();
+            funda.service.DetailAlgemeenRequest inValue = new funda.service.DetailAlgemeenRequest();
             inValue.key = key;
             inValue.globalid = globalid;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).DetailAlgemeenAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailAlgemeenAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailKoopByGlobalIdResponse> funda.Services.IAanbod.DetailKoopByGlobalIdAsync(funda.Services.DetailKoopByGlobalIdRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailKoopByGlobalIdResponse> funda.service.IAanbod.DetailKoopByGlobalIdAsync(funda.service.DetailKoopByGlobalIdRequest request)
         {
             return base.Channel.DetailKoopByGlobalIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailKoopByGlobalIdResponse> DetailKoopByGlobalIdAsync(string key, string globalId, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.DetailKoopByGlobalIdResponse> DetailKoopByGlobalIdAsync(string key, string globalId, string statistiekId)
         {
-            funda.Services.DetailKoopByGlobalIdRequest inValue = new funda.Services.DetailKoopByGlobalIdRequest();
+            funda.service.DetailKoopByGlobalIdRequest inValue = new funda.service.DetailKoopByGlobalIdRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).DetailKoopByGlobalIdAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailKoopByGlobalIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailNieuwbouwByGlobalIdResponse> funda.Services.IAanbod.DetailNieuwbouwByGlobalIdAsync(funda.Services.DetailNieuwbouwByGlobalIdRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailNieuwbouwByGlobalIdResponse> funda.service.IAanbod.DetailNieuwbouwByGlobalIdAsync(funda.service.DetailNieuwbouwByGlobalIdRequest request)
         {
             return base.Channel.DetailNieuwbouwByGlobalIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailNieuwbouwByGlobalIdResponse> DetailNieuwbouwByGlobalIdAsync(string key, string globalId, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.DetailNieuwbouwByGlobalIdResponse> DetailNieuwbouwByGlobalIdAsync(string key, string globalId, string statistiekId)
         {
-            funda.Services.DetailNieuwbouwByGlobalIdRequest inValue = new funda.Services.DetailNieuwbouwByGlobalIdRequest();
+            funda.service.DetailNieuwbouwByGlobalIdRequest inValue = new funda.service.DetailNieuwbouwByGlobalIdRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).DetailNieuwbouwByGlobalIdAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailNieuwbouwByGlobalIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailHuurByGlobalIdResponse> funda.Services.IAanbod.DetailHuurByGlobalIdAsync(funda.Services.DetailHuurByGlobalIdRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailHuurByGlobalIdResponse> funda.service.IAanbod.DetailHuurByGlobalIdAsync(funda.service.DetailHuurByGlobalIdRequest request)
         {
             return base.Channel.DetailHuurByGlobalIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailHuurByGlobalIdResponse> DetailHuurByGlobalIdAsync(string key, string globalId, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.DetailHuurByGlobalIdResponse> DetailHuurByGlobalIdAsync(string key, string globalId, string statistiekId)
         {
-            funda.Services.DetailHuurByGlobalIdRequest inValue = new funda.Services.DetailHuurByGlobalIdRequest();
+            funda.service.DetailHuurByGlobalIdRequest inValue = new funda.service.DetailHuurByGlobalIdRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).DetailHuurByGlobalIdAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailHuurByGlobalIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailBogByGlobalIdResponse> funda.Services.IAanbod.DetailBogByGlobalIdAsync(funda.Services.DetailBogByGlobalIdRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailBogByGlobalIdResponse> funda.service.IAanbod.DetailBogByGlobalIdAsync(funda.service.DetailBogByGlobalIdRequest request)
         {
             return base.Channel.DetailBogByGlobalIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailBogByGlobalIdResponse> DetailBogByGlobalIdAsync(string key, string globalId, string soortAanbod, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.DetailBogByGlobalIdResponse> DetailBogByGlobalIdAsync(string key, string globalId, string soortAanbod, string statistiekId)
         {
-            funda.Services.DetailBogByGlobalIdRequest inValue = new funda.Services.DetailBogByGlobalIdRequest();
+            funda.service.DetailBogByGlobalIdRequest inValue = new funda.service.DetailBogByGlobalIdRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.soortAanbod = soortAanbod;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).DetailBogByGlobalIdAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailBogByGlobalIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ZoekAanbodResponse> funda.Services.IAanbod.ZoekAanbodAsync(funda.Services.ZoekAanbodRequest request)
+        System.Threading.Tasks.Task<funda.service.ZoekAanbodResponse> funda.service.IAanbod.ZoekAanbodAsync(funda.service.ZoekAanbodRequest request)
         {
             return base.Channel.ZoekAanbodAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ZoekAanbodResponse> ZoekAanbodAsync(string key, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
+        public System.Threading.Tasks.Task<funda.service.ZoekAanbodResponse> ZoekAanbodAsync(string key, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
         {
-            funda.Services.ZoekAanbodRequest inValue = new funda.Services.ZoekAanbodRequest();
+            funda.service.ZoekAanbodRequest inValue = new funda.service.ZoekAanbodRequest();
             inValue.key = key;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
@@ -18990,51 +18990,51 @@ namespace funda.Services
             inValue.pagesize = pagesize;
             inValue.statistiekId = statistiekId;
             inValue.projectObjectenTonen = projectObjectenTonen;
-            return ((funda.Services.IAanbod)(this)).ZoekAanbodAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ZoekAanbodAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ChromecastPropertyResponse> funda.Services.IAanbod.ChromecastPropertyAsync(funda.Services.ChromecastPropertyRequest request)
+        System.Threading.Tasks.Task<funda.service.ChromecastPropertyResponse> funda.service.IAanbod.ChromecastPropertyAsync(funda.service.ChromecastPropertyRequest request)
         {
             return base.Channel.ChromecastPropertyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ChromecastPropertyResponse> ChromecastPropertyAsync(string key, funda.Services.Website website, string makelaarId, string page)
+        public System.Threading.Tasks.Task<funda.service.ChromecastPropertyResponse> ChromecastPropertyAsync(string key, funda.service.Website website, string makelaarId, string page)
         {
-            funda.Services.ChromecastPropertyRequest inValue = new funda.Services.ChromecastPropertyRequest();
+            funda.service.ChromecastPropertyRequest inValue = new funda.service.ChromecastPropertyRequest();
             inValue.key = key;
             inValue.website = website;
             inValue.makelaarId = makelaarId;
             inValue.page = page;
-            return ((funda.Services.IAanbod)(this)).ChromecastPropertyAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ChromecastPropertyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.MapPropertyResponse> funda.Services.IAanbod.MapPropertyAsync(funda.Services.MapPropertyRequest request)
+        System.Threading.Tasks.Task<funda.service.MapPropertyResponse> funda.service.IAanbod.MapPropertyAsync(funda.service.MapPropertyRequest request)
         {
             return base.Channel.MapPropertyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.MapPropertyResponse> MapPropertyAsync(string key, funda.Services.Website website, bool isHistorisch, string statistiekId, funda.Services.MapDetails mapDetails)
+        public System.Threading.Tasks.Task<funda.service.MapPropertyResponse> MapPropertyAsync(string key, funda.service.Website website, bool isHistorisch, string statistiekId, funda.service.MapDetails mapDetails)
         {
-            funda.Services.MapPropertyRequest inValue = new funda.Services.MapPropertyRequest();
+            funda.service.MapPropertyRequest inValue = new funda.service.MapPropertyRequest();
             inValue.key = key;
             inValue.website = website;
             inValue.isHistorisch = isHistorisch;
             inValue.statistiekId = statistiekId;
             inValue.mapDetails = mapDetails;
-            return ((funda.Services.IAanbod)(this)).MapPropertyAsync(inValue);
+            return ((funda.service.IAanbod)(this)).MapPropertyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SearchPropertyResponse> funda.Services.IAanbod.SearchPropertyAsync(funda.Services.SearchPropertyRequest request)
+        System.Threading.Tasks.Task<funda.service.SearchPropertyResponse> funda.service.IAanbod.SearchPropertyAsync(funda.service.SearchPropertyRequest request)
         {
             return base.Channel.SearchPropertyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SearchPropertyResponse> SearchPropertyAsync(string key, funda.Services.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen, bool objectTypenTonen)
+        public System.Threading.Tasks.Task<funda.service.SearchPropertyResponse> SearchPropertyAsync(string key, funda.service.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen, bool objectTypenTonen)
         {
-            funda.Services.SearchPropertyRequest inValue = new funda.Services.SearchPropertyRequest();
+            funda.service.SearchPropertyRequest inValue = new funda.service.SearchPropertyRequest();
             inValue.key = key;
             inValue.website = website;
             inValue.aanbodType = aanbodType;
@@ -19045,18 +19045,18 @@ namespace funda.Services
             inValue.statistiekId = statistiekId;
             inValue.projectObjectenTonen = projectObjectenTonen;
             inValue.objectTypenTonen = objectTypenTonen;
-            return ((funda.Services.IAanbod)(this)).SearchPropertyAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SearchPropertyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyResponse> funda.Services.IAanbod.SearchSoldPropertyAsync(funda.Services.SearchSoldPropertyRequest request)
+        System.Threading.Tasks.Task<funda.service.SearchSoldPropertyResponse> funda.service.IAanbod.SearchSoldPropertyAsync(funda.service.SearchSoldPropertyRequest request)
         {
             return base.Channel.SearchSoldPropertyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyResponse> SearchSoldPropertyAsync(string key, funda.Services.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
+        public System.Threading.Tasks.Task<funda.service.SearchSoldPropertyResponse> SearchSoldPropertyAsync(string key, funda.service.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
         {
-            funda.Services.SearchSoldPropertyRequest inValue = new funda.Services.SearchSoldPropertyRequest();
+            funda.service.SearchSoldPropertyRequest inValue = new funda.service.SearchSoldPropertyRequest();
             inValue.key = key;
             inValue.website = website;
             inValue.aanbodType = aanbodType;
@@ -19066,83 +19066,83 @@ namespace funda.Services
             inValue.pagesize = pagesize;
             inValue.statistiekId = statistiekId;
             inValue.projectObjectenTonen = projectObjectenTonen;
-            return ((funda.Services.IAanbod)(this)).SearchSoldPropertyAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SearchSoldPropertyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyLocationResponse> funda.Services.IAanbod.SearchSoldPropertyLocationAsync(funda.Services.SearchSoldPropertyLocationRequest request)
+        System.Threading.Tasks.Task<funda.service.SearchSoldPropertyLocationResponse> funda.service.IAanbod.SearchSoldPropertyLocationAsync(funda.service.SearchSoldPropertyLocationRequest request)
         {
             return base.Channel.SearchSoldPropertyLocationAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyLocationResponse> SearchSoldPropertyLocationAsync(string key, string aanbodType, string zoekPad, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.SearchSoldPropertyLocationResponse> SearchSoldPropertyLocationAsync(string key, string aanbodType, string zoekPad, string statistiekId)
         {
-            funda.Services.SearchSoldPropertyLocationRequest inValue = new funda.Services.SearchSoldPropertyLocationRequest();
+            funda.service.SearchSoldPropertyLocationRequest inValue = new funda.service.SearchSoldPropertyLocationRequest();
             inValue.key = key;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).SearchSoldPropertyLocationAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SearchSoldPropertyLocationAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyLocationJsonResponse> funda.Services.IAanbod.SearchSoldPropertyLocationJsonAsync(funda.Services.SearchSoldPropertyLocationJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.SearchSoldPropertyLocationJsonResponse> funda.service.IAanbod.SearchSoldPropertyLocationJsonAsync(funda.service.SearchSoldPropertyLocationJsonRequest request)
         {
             return base.Channel.SearchSoldPropertyLocationJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyLocationJsonResponse> SearchSoldPropertyLocationJsonAsync(string key, string aanbodType, string zoekPad, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.SearchSoldPropertyLocationJsonResponse> SearchSoldPropertyLocationJsonAsync(string key, string aanbodType, string zoekPad, string statistiekId)
         {
-            funda.Services.SearchSoldPropertyLocationJsonRequest inValue = new funda.Services.SearchSoldPropertyLocationJsonRequest();
+            funda.service.SearchSoldPropertyLocationJsonRequest inValue = new funda.service.SearchSoldPropertyLocationJsonRequest();
             inValue.key = key;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).SearchSoldPropertyLocationJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SearchSoldPropertyLocationJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SearchPropertyLocationResponse> funda.Services.IAanbod.SearchPropertyLocationAsync(funda.Services.SearchPropertyLocationRequest request)
+        System.Threading.Tasks.Task<funda.service.SearchPropertyLocationResponse> funda.service.IAanbod.SearchPropertyLocationAsync(funda.service.SearchPropertyLocationRequest request)
         {
             return base.Channel.SearchPropertyLocationAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SearchPropertyLocationResponse> SearchPropertyLocationAsync(string key, string aanbodType, string zoekPad, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.SearchPropertyLocationResponse> SearchPropertyLocationAsync(string key, string aanbodType, string zoekPad, string statistiekId)
         {
-            funda.Services.SearchPropertyLocationRequest inValue = new funda.Services.SearchPropertyLocationRequest();
+            funda.service.SearchPropertyLocationRequest inValue = new funda.service.SearchPropertyLocationRequest();
             inValue.key = key;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).SearchPropertyLocationAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SearchPropertyLocationAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SearchPropertyLocationJsonResponse> funda.Services.IAanbod.SearchPropertyLocationJsonAsync(funda.Services.SearchPropertyLocationJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.SearchPropertyLocationJsonResponse> funda.service.IAanbod.SearchPropertyLocationJsonAsync(funda.service.SearchPropertyLocationJsonRequest request)
         {
             return base.Channel.SearchPropertyLocationJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SearchPropertyLocationJsonResponse> SearchPropertyLocationJsonAsync(string key, funda.Services.Website website, string aanbodType, string zoekPad, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.SearchPropertyLocationJsonResponse> SearchPropertyLocationJsonAsync(string key, funda.service.Website website, string aanbodType, string zoekPad, string statistiekId)
         {
-            funda.Services.SearchPropertyLocationJsonRequest inValue = new funda.Services.SearchPropertyLocationJsonRequest();
+            funda.service.SearchPropertyLocationJsonRequest inValue = new funda.service.SearchPropertyLocationJsonRequest();
             inValue.key = key;
             inValue.website = website;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).SearchPropertyLocationJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SearchPropertyLocationJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyJsonResponse> funda.Services.IAanbod.SearchSoldPropertyJsonAsync(funda.Services.SearchSoldPropertyJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.SearchSoldPropertyJsonResponse> funda.service.IAanbod.SearchSoldPropertyJsonAsync(funda.service.SearchSoldPropertyJsonRequest request)
         {
             return base.Channel.SearchSoldPropertyJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SearchSoldPropertyJsonResponse> SearchSoldPropertyJsonAsync(string key, funda.Services.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
+        public System.Threading.Tasks.Task<funda.service.SearchSoldPropertyJsonResponse> SearchSoldPropertyJsonAsync(string key, funda.service.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
         {
-            funda.Services.SearchSoldPropertyJsonRequest inValue = new funda.Services.SearchSoldPropertyJsonRequest();
+            funda.service.SearchSoldPropertyJsonRequest inValue = new funda.service.SearchSoldPropertyJsonRequest();
             inValue.key = key;
             inValue.website = website;
             inValue.aanbodType = aanbodType;
@@ -19152,18 +19152,18 @@ namespace funda.Services
             inValue.pagesize = pagesize;
             inValue.statistiekId = statistiekId;
             inValue.projectObjectenTonen = projectObjectenTonen;
-            return ((funda.Services.IAanbod)(this)).SearchSoldPropertyJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SearchSoldPropertyJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SearchPropertyJsonResponse> funda.Services.IAanbod.SearchPropertyJsonAsync(funda.Services.SearchPropertyJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.SearchPropertyJsonResponse> funda.service.IAanbod.SearchPropertyJsonAsync(funda.service.SearchPropertyJsonRequest request)
         {
             return base.Channel.SearchPropertyJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SearchPropertyJsonResponse> SearchPropertyJsonAsync(string key, funda.Services.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen, bool objectTypenTonen)
+        public System.Threading.Tasks.Task<funda.service.SearchPropertyJsonResponse> SearchPropertyJsonAsync(string key, funda.service.Website website, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen, bool objectTypenTonen)
         {
-            funda.Services.SearchPropertyJsonRequest inValue = new funda.Services.SearchPropertyJsonRequest();
+            funda.service.SearchPropertyJsonRequest inValue = new funda.service.SearchPropertyJsonRequest();
             inValue.key = key;
             inValue.website = website;
             inValue.aanbodType = aanbodType;
@@ -19174,256 +19174,256 @@ namespace funda.Services
             inValue.statistiekId = statistiekId;
             inValue.projectObjectenTonen = projectObjectenTonen;
             inValue.objectTypenTonen = objectTypenTonen;
-            return ((funda.Services.IAanbod)(this)).SearchPropertyJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SearchPropertyJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SearchPropertyRssResponse> funda.Services.IAanbod.SearchPropertyRssAsync(funda.Services.SearchPropertyRssRequest request)
+        System.Threading.Tasks.Task<funda.service.SearchPropertyRssResponse> funda.service.IAanbod.SearchPropertyRssAsync(funda.service.SearchPropertyRssRequest request)
         {
             return base.Channel.SearchPropertyRssAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SearchPropertyRssResponse> SearchPropertyRssAsync(funda.Services.Website website, string aanbodType, string zoekPad)
+        public System.Threading.Tasks.Task<funda.service.SearchPropertyRssResponse> SearchPropertyRssAsync(funda.service.Website website, string aanbodType, string zoekPad)
         {
-            funda.Services.SearchPropertyRssRequest inValue = new funda.Services.SearchPropertyRssRequest();
+            funda.service.SearchPropertyRssRequest inValue = new funda.service.SearchPropertyRssRequest();
             inValue.website = website;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
-            return ((funda.Services.IAanbod)(this)).SearchPropertyRssAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SearchPropertyRssAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ZoekAanbodRssResponse> funda.Services.IAanbod.ZoekAanbodRssAsync(funda.Services.ZoekAanbodRssRequest request)
+        System.Threading.Tasks.Task<funda.service.ZoekAanbodRssResponse> funda.service.IAanbod.ZoekAanbodRssAsync(funda.service.ZoekAanbodRssRequest request)
         {
             return base.Channel.ZoekAanbodRssAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ZoekAanbodRssResponse> ZoekAanbodRssAsync(string aanbodType, string zoekPad)
+        public System.Threading.Tasks.Task<funda.service.ZoekAanbodRssResponse> ZoekAanbodRssAsync(string aanbodType, string zoekPad)
         {
-            funda.Services.ZoekAanbodRssRequest inValue = new funda.Services.ZoekAanbodRssRequest();
+            funda.service.ZoekAanbodRssRequest inValue = new funda.service.ZoekAanbodRssRequest();
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
-            return ((funda.Services.IAanbod)(this)).ZoekAanbodRssAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ZoekAanbodRssAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ContactBezichtigingResponse> funda.Services.IAanbod.ContactBezichtigingAsync(funda.Services.ContactBezichtigingRequest request)
+        System.Threading.Tasks.Task<funda.service.ContactBezichtigingResponse> funda.service.IAanbod.ContactBezichtigingAsync(funda.service.ContactBezichtigingRequest request)
         {
             return base.Channel.ContactBezichtigingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ContactBezichtigingResponse> ContactBezichtigingAsync(string key, string globalId, funda.Services.AanbodContactBezichtigingRequest bezichtiging)
+        public System.Threading.Tasks.Task<funda.service.ContactBezichtigingResponse> ContactBezichtigingAsync(string key, string globalId, funda.service.AanbodContactBezichtigingRequest bezichtiging)
         {
-            funda.Services.ContactBezichtigingRequest inValue = new funda.Services.ContactBezichtigingRequest();
+            funda.service.ContactBezichtigingRequest inValue = new funda.service.ContactBezichtigingRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.bezichtiging = bezichtiging;
-            return ((funda.Services.IAanbod)(this)).ContactBezichtigingAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ContactBezichtigingAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ContactReactieResponse> funda.Services.IAanbod.ContactReactieAsync(funda.Services.ContactReactieRequest request)
+        System.Threading.Tasks.Task<funda.service.ContactReactieResponse> funda.service.IAanbod.ContactReactieAsync(funda.service.ContactReactieRequest request)
         {
             return base.Channel.ContactReactieAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ContactReactieResponse> ContactReactieAsync(string key, string globalId, funda.Services.AanbodContactReactieRequest reactie)
+        public System.Threading.Tasks.Task<funda.service.ContactReactieResponse> ContactReactieAsync(string key, string globalId, funda.service.AanbodContactReactieRequest reactie)
         {
-            funda.Services.ContactReactieRequest inValue = new funda.Services.ContactReactieRequest();
+            funda.service.ContactReactieRequest inValue = new funda.service.ContactReactieRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.reactie = reactie;
-            return ((funda.Services.IAanbod)(this)).ContactReactieAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ContactReactieAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ContactTelefoonResponse> funda.Services.IAanbod.ContactTelefoonAsync(funda.Services.ContactTelefoonRequest request)
+        System.Threading.Tasks.Task<funda.service.ContactTelefoonResponse> funda.service.IAanbod.ContactTelefoonAsync(funda.service.ContactTelefoonRequest request)
         {
             return base.Channel.ContactTelefoonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ContactTelefoonResponse> ContactTelefoonAsync(string key, string globalId, string makelaarId)
+        public System.Threading.Tasks.Task<funda.service.ContactTelefoonResponse> ContactTelefoonAsync(string key, string globalId, string makelaarId)
         {
-            funda.Services.ContactTelefoonRequest inValue = new funda.Services.ContactTelefoonRequest();
+            funda.service.ContactTelefoonRequest inValue = new funda.service.ContactTelefoonRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.makelaarId = makelaarId;
-            return ((funda.Services.IAanbod)(this)).ContactTelefoonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ContactTelefoonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ContactAanvraagBrochureResponse> funda.Services.IAanbod.ContactAanvraagBrochureAsync(funda.Services.ContactAanvraagBrochureRequest request)
+        System.Threading.Tasks.Task<funda.service.ContactAanvraagBrochureResponse> funda.service.IAanbod.ContactAanvraagBrochureAsync(funda.service.ContactAanvraagBrochureRequest request)
         {
             return base.Channel.ContactAanvraagBrochureAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ContactAanvraagBrochureResponse> ContactAanvraagBrochureAsync(string key, string globalId, funda.Services.AanbodContactBrochureAanvraagRequest brochureAanvraag)
+        public System.Threading.Tasks.Task<funda.service.ContactAanvraagBrochureResponse> ContactAanvraagBrochureAsync(string key, string globalId, funda.service.AanbodContactBrochureAanvraagRequest brochureAanvraag)
         {
-            funda.Services.ContactAanvraagBrochureRequest inValue = new funda.Services.ContactAanvraagBrochureRequest();
+            funda.service.ContactAanvraagBrochureRequest inValue = new funda.service.ContactAanvraagBrochureRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.brochureAanvraag = brochureAanvraag;
-            return ((funda.Services.IAanbod)(this)).ContactAanvraagBrochureAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ContactAanvraagBrochureAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ContactProjectWebsiteResponse> funda.Services.IAanbod.ContactProjectWebsiteAsync(funda.Services.ContactProjectWebsiteRequest request)
+        System.Threading.Tasks.Task<funda.service.ContactProjectWebsiteResponse> funda.service.IAanbod.ContactProjectWebsiteAsync(funda.service.ContactProjectWebsiteRequest request)
         {
             return base.Channel.ContactProjectWebsiteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ContactProjectWebsiteResponse> ContactProjectWebsiteAsync(string key, string globalId, string makelaarId)
+        public System.Threading.Tasks.Task<funda.service.ContactProjectWebsiteResponse> ContactProjectWebsiteAsync(string key, string globalId, string makelaarId)
         {
-            funda.Services.ContactProjectWebsiteRequest inValue = new funda.Services.ContactProjectWebsiteRequest();
+            funda.service.ContactProjectWebsiteRequest inValue = new funda.service.ContactProjectWebsiteRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.makelaarId = makelaarId;
-            return ((funda.Services.IAanbod)(this)).ContactProjectWebsiteAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ContactProjectWebsiteAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ContactInschrijfformulierResponse> funda.Services.IAanbod.ContactInschrijfformulierAsync(funda.Services.ContactInschrijfformulierRequest request)
+        System.Threading.Tasks.Task<funda.service.ContactInschrijfformulierResponse> funda.service.IAanbod.ContactInschrijfformulierAsync(funda.service.ContactInschrijfformulierRequest request)
         {
             return base.Channel.ContactInschrijfformulierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ContactInschrijfformulierResponse> ContactInschrijfformulierAsync(string key, string globalId, string makelaarId)
+        public System.Threading.Tasks.Task<funda.service.ContactInschrijfformulierResponse> ContactInschrijfformulierAsync(string key, string globalId, string makelaarId)
         {
-            funda.Services.ContactInschrijfformulierRequest inValue = new funda.Services.ContactInschrijfformulierRequest();
+            funda.service.ContactInschrijfformulierRequest inValue = new funda.service.ContactInschrijfformulierRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.makelaarId = makelaarId;
-            return ((funda.Services.IAanbod)(this)).ContactInschrijfformulierAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ContactInschrijfformulierAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.RegistreerStatistiekenResponse> funda.Services.IAanbod.RegistreerStatistiekenAsync(funda.Services.RegistreerStatistiekenRequest request)
+        System.Threading.Tasks.Task<funda.service.RegistreerStatistiekenResponse> funda.service.IAanbod.RegistreerStatistiekenAsync(funda.service.RegistreerStatistiekenRequest request)
         {
             return base.Channel.RegistreerStatistiekenAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.RegistreerStatistiekenResponse> RegistreerStatistiekenAsync(string key, string globalId, string statistiekId)
+        public System.Threading.Tasks.Task<funda.service.RegistreerStatistiekenResponse> RegistreerStatistiekenAsync(string key, string globalId, string statistiekId)
         {
-            funda.Services.RegistreerStatistiekenRequest inValue = new funda.Services.RegistreerStatistiekenRequest();
+            funda.service.RegistreerStatistiekenRequest inValue = new funda.service.RegistreerStatistiekenRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.statistiekId = statistiekId;
-            return ((funda.Services.IAanbod)(this)).RegistreerStatistiekenAsync(inValue);
+            return ((funda.service.IAanbod)(this)).RegistreerStatistiekenAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ZoekRecentAanbodJsonResponse> funda.Services.IAanbod.ZoekRecentAanbodJsonAsync(funda.Services.ZoekRecentAanbodJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.ZoekRecentAanbodJsonResponse> funda.service.IAanbod.ZoekRecentAanbodJsonAsync(funda.service.ZoekRecentAanbodJsonRequest request)
         {
             return base.Channel.ZoekRecentAanbodJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ZoekRecentAanbodJsonResponse> ZoekRecentAanbodJsonAsync(string key, string aanbodType, string zoekPad, string since, string page, string pagesize)
+        public System.Threading.Tasks.Task<funda.service.ZoekRecentAanbodJsonResponse> ZoekRecentAanbodJsonAsync(string key, string aanbodType, string zoekPad, string since, string page, string pagesize)
         {
-            funda.Services.ZoekRecentAanbodJsonRequest inValue = new funda.Services.ZoekRecentAanbodJsonRequest();
+            funda.service.ZoekRecentAanbodJsonRequest inValue = new funda.service.ZoekRecentAanbodJsonRequest();
             inValue.key = key;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
             inValue.since = since;
             inValue.page = page;
             inValue.pagesize = pagesize;
-            return ((funda.Services.IAanbod)(this)).ZoekRecentAanbodJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ZoekRecentAanbodJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ZoekLocatieJsonResponse> funda.Services.IAanbod.ZoekLocatieJsonAsync(funda.Services.ZoekLocatieJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.ZoekLocatieJsonResponse> funda.service.IAanbod.ZoekLocatieJsonAsync(funda.service.ZoekLocatieJsonRequest request)
         {
             return base.Channel.ZoekLocatieJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ZoekLocatieJsonResponse> ZoekLocatieJsonAsync(string key, string aanbodType, string zoekPad)
+        public System.Threading.Tasks.Task<funda.service.ZoekLocatieJsonResponse> ZoekLocatieJsonAsync(string key, string aanbodType, string zoekPad)
         {
-            funda.Services.ZoekLocatieJsonRequest inValue = new funda.Services.ZoekLocatieJsonRequest();
+            funda.service.ZoekLocatieJsonRequest inValue = new funda.service.ZoekLocatieJsonRequest();
             inValue.key = key;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
-            return ((funda.Services.IAanbod)(this)).ZoekLocatieJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ZoekLocatieJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailKoopJsonResponse> funda.Services.IAanbod.DetailKoopJsonAsync(funda.Services.DetailKoopJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailKoopJsonResponse> funda.service.IAanbod.DetailKoopJsonAsync(funda.service.DetailKoopJsonRequest request)
         {
             return base.Channel.DetailKoopJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailKoopJsonResponse> DetailKoopJsonAsync(string key, string internalid)
+        public System.Threading.Tasks.Task<funda.service.DetailKoopJsonResponse> DetailKoopJsonAsync(string key, string internalid)
         {
-            funda.Services.DetailKoopJsonRequest inValue = new funda.Services.DetailKoopJsonRequest();
+            funda.service.DetailKoopJsonRequest inValue = new funda.service.DetailKoopJsonRequest();
             inValue.key = key;
             inValue.internalid = internalid;
-            return ((funda.Services.IAanbod)(this)).DetailKoopJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailKoopJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailNieuwbouwJsonResponse> funda.Services.IAanbod.DetailNieuwbouwJsonAsync(funda.Services.DetailNieuwbouwJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailNieuwbouwJsonResponse> funda.service.IAanbod.DetailNieuwbouwJsonAsync(funda.service.DetailNieuwbouwJsonRequest request)
         {
             return base.Channel.DetailNieuwbouwJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailNieuwbouwJsonResponse> DetailNieuwbouwJsonAsync(string key, string internalid)
+        public System.Threading.Tasks.Task<funda.service.DetailNieuwbouwJsonResponse> DetailNieuwbouwJsonAsync(string key, string internalid)
         {
-            funda.Services.DetailNieuwbouwJsonRequest inValue = new funda.Services.DetailNieuwbouwJsonRequest();
+            funda.service.DetailNieuwbouwJsonRequest inValue = new funda.service.DetailNieuwbouwJsonRequest();
             inValue.key = key;
             inValue.internalid = internalid;
-            return ((funda.Services.IAanbod)(this)).DetailNieuwbouwJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailNieuwbouwJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailHuurJsonResponse> funda.Services.IAanbod.DetailHuurJsonAsync(funda.Services.DetailHuurJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailHuurJsonResponse> funda.service.IAanbod.DetailHuurJsonAsync(funda.service.DetailHuurJsonRequest request)
         {
             return base.Channel.DetailHuurJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailHuurJsonResponse> DetailHuurJsonAsync(string key, string internalid)
+        public System.Threading.Tasks.Task<funda.service.DetailHuurJsonResponse> DetailHuurJsonAsync(string key, string internalid)
         {
-            funda.Services.DetailHuurJsonRequest inValue = new funda.Services.DetailHuurJsonRequest();
+            funda.service.DetailHuurJsonRequest inValue = new funda.service.DetailHuurJsonRequest();
             inValue.key = key;
             inValue.internalid = internalid;
-            return ((funda.Services.IAanbod)(this)).DetailHuurJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailHuurJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailBogJsonResponse> funda.Services.IAanbod.DetailBogJsonAsync(funda.Services.DetailBogJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailBogJsonResponse> funda.service.IAanbod.DetailBogJsonAsync(funda.service.DetailBogJsonRequest request)
         {
             return base.Channel.DetailBogJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailBogJsonResponse> DetailBogJsonAsync(string key, string internalid, string soortaanbod)
+        public System.Threading.Tasks.Task<funda.service.DetailBogJsonResponse> DetailBogJsonAsync(string key, string internalid, string soortaanbod)
         {
-            funda.Services.DetailBogJsonRequest inValue = new funda.Services.DetailBogJsonRequest();
+            funda.service.DetailBogJsonRequest inValue = new funda.service.DetailBogJsonRequest();
             inValue.key = key;
             inValue.internalid = internalid;
             inValue.soortaanbod = soortaanbod;
-            return ((funda.Services.IAanbod)(this)).DetailBogJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailBogJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.DetailRecreatieJsonResponse> funda.Services.IAanbod.DetailRecreatieJsonAsync(funda.Services.DetailRecreatieJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.DetailRecreatieJsonResponse> funda.service.IAanbod.DetailRecreatieJsonAsync(funda.service.DetailRecreatieJsonRequest request)
         {
             return base.Channel.DetailRecreatieJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.DetailRecreatieJsonResponse> DetailRecreatieJsonAsync(string key, string internalid)
+        public System.Threading.Tasks.Task<funda.service.DetailRecreatieJsonResponse> DetailRecreatieJsonAsync(string key, string internalid)
         {
-            funda.Services.DetailRecreatieJsonRequest inValue = new funda.Services.DetailRecreatieJsonRequest();
+            funda.service.DetailRecreatieJsonRequest inValue = new funda.service.DetailRecreatieJsonRequest();
             inValue.key = key;
             inValue.internalid = internalid;
-            return ((funda.Services.IAanbod)(this)).DetailRecreatieJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).DetailRecreatieJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ZoekAanbodJsonResponse> funda.Services.IAanbod.ZoekAanbodJsonAsync(funda.Services.ZoekAanbodJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.ZoekAanbodJsonResponse> funda.service.IAanbod.ZoekAanbodJsonAsync(funda.service.ZoekAanbodJsonRequest request)
         {
             return base.Channel.ZoekAanbodJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ZoekAanbodJsonResponse> ZoekAanbodJsonAsync(string key, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
+        public System.Threading.Tasks.Task<funda.service.ZoekAanbodJsonResponse> ZoekAanbodJsonAsync(string key, string aanbodType, string zoekPad, string since, string page, string pagesize, string statistiekId, int projectObjectenTonen)
         {
-            funda.Services.ZoekAanbodJsonRequest inValue = new funda.Services.ZoekAanbodJsonRequest();
+            funda.service.ZoekAanbodJsonRequest inValue = new funda.service.ZoekAanbodJsonRequest();
             inValue.key = key;
             inValue.aanbodType = aanbodType;
             inValue.zoekPad = zoekPad;
@@ -19432,181 +19432,181 @@ namespace funda.Services
             inValue.pagesize = pagesize;
             inValue.statistiekId = statistiekId;
             inValue.projectObjectenTonen = projectObjectenTonen;
-            return ((funda.Services.IAanbod)(this)).ZoekAanbodJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ZoekAanbodJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.LogFoutmeldingResponse> funda.Services.IAanbod.LogFoutmeldingAsync(funda.Services.LogFoutmeldingRequest request)
+        System.Threading.Tasks.Task<funda.service.LogFoutmeldingResponse> funda.service.IAanbod.LogFoutmeldingAsync(funda.service.LogFoutmeldingRequest request)
         {
             return base.Channel.LogFoutmeldingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.LogFoutmeldingResponse> LogFoutmeldingAsync(string key, funda.Services.Foutmelding foutmelding)
+        public System.Threading.Tasks.Task<funda.service.LogFoutmeldingResponse> LogFoutmeldingAsync(string key, funda.service.Foutmelding foutmelding)
         {
-            funda.Services.LogFoutmeldingRequest inValue = new funda.Services.LogFoutmeldingRequest();
+            funda.service.LogFoutmeldingRequest inValue = new funda.service.LogFoutmeldingRequest();
             inValue.key = key;
             inValue.foutmelding = foutmelding;
-            return ((funda.Services.IAanbod)(this)).LogFoutmeldingAsync(inValue);
+            return ((funda.service.IAanbod)(this)).LogFoutmeldingAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.LogFoutmeldingJsonResponse> funda.Services.IAanbod.LogFoutmeldingJsonAsync(funda.Services.LogFoutmeldingJsonRequest request)
+        System.Threading.Tasks.Task<funda.service.LogFoutmeldingJsonResponse> funda.service.IAanbod.LogFoutmeldingJsonAsync(funda.service.LogFoutmeldingJsonRequest request)
         {
             return base.Channel.LogFoutmeldingJsonAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.LogFoutmeldingJsonResponse> LogFoutmeldingJsonAsync(string key, funda.Services.Foutmelding foutmelding)
+        public System.Threading.Tasks.Task<funda.service.LogFoutmeldingJsonResponse> LogFoutmeldingJsonAsync(string key, funda.service.Foutmelding foutmelding)
         {
-            funda.Services.LogFoutmeldingJsonRequest inValue = new funda.Services.LogFoutmeldingJsonRequest();
+            funda.service.LogFoutmeldingJsonRequest inValue = new funda.service.LogFoutmeldingJsonRequest();
             inValue.key = key;
             inValue.foutmelding = foutmelding;
-            return ((funda.Services.IAanbod)(this)).LogFoutmeldingJsonAsync(inValue);
+            return ((funda.service.IAanbod)(this)).LogFoutmeldingJsonAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.ShareObjectResponse> funda.Services.IAanbod.ShareObjectAsync(funda.Services.ShareObjectRequest request)
+        System.Threading.Tasks.Task<funda.service.ShareObjectResponse> funda.service.IAanbod.ShareObjectAsync(funda.service.ShareObjectRequest request)
         {
             return base.Channel.ShareObjectAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.ShareObjectResponse> ShareObjectAsync(string key, funda.Services.ShareObjectModel shareObject)
+        public System.Threading.Tasks.Task<funda.service.ShareObjectResponse> ShareObjectAsync(string key, funda.service.ShareObjectModel shareObject)
         {
-            funda.Services.ShareObjectRequest inValue = new funda.Services.ShareObjectRequest();
+            funda.service.ShareObjectRequest inValue = new funda.service.ShareObjectRequest();
             inValue.key = key;
             inValue.shareObject = shareObject;
-            return ((funda.Services.IAanbod)(this)).ShareObjectAsync(inValue);
+            return ((funda.service.IAanbod)(this)).ShareObjectAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.Get360PhotosResponse> funda.Services.IAanbod.Get360PhotosAsync(funda.Services.Get360PhotosRequest request)
+        System.Threading.Tasks.Task<funda.service.Get360PhotosResponse> funda.service.IAanbod.Get360PhotosAsync(funda.service.Get360PhotosRequest request)
         {
             return base.Channel.Get360PhotosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.Get360PhotosResponse> Get360PhotosAsync(string key, long globalId, string mediaId, funda.Services.SoortAanbod soortAanbod)
+        public System.Threading.Tasks.Task<funda.service.Get360PhotosResponse> Get360PhotosAsync(string key, long globalId, string mediaId, funda.service.SoortAanbod soortAanbod)
         {
-            funda.Services.Get360PhotosRequest inValue = new funda.Services.Get360PhotosRequest();
+            funda.service.Get360PhotosRequest inValue = new funda.service.Get360PhotosRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.mediaId = mediaId;
             inValue.soortAanbod = soortAanbod;
-            return ((funda.Services.IAanbod)(this)).Get360PhotosAsync(inValue);
+            return ((funda.service.IAanbod)(this)).Get360PhotosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.GetFloorplanResponse> funda.Services.IAanbod.GetFloorplanAsync(funda.Services.GetFloorplanRequest request)
+        System.Threading.Tasks.Task<funda.service.GetFloorplanResponse> funda.service.IAanbod.GetFloorplanAsync(funda.service.GetFloorplanRequest request)
         {
             return base.Channel.GetFloorplanAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.GetFloorplanResponse> GetFloorplanAsync(string key, long globalId, funda.Services.SoortAanbod soortAanbod)
+        public System.Threading.Tasks.Task<funda.service.GetFloorplanResponse> GetFloorplanAsync(string key, long globalId, funda.service.SoortAanbod soortAanbod)
         {
-            funda.Services.GetFloorplanRequest inValue = new funda.Services.GetFloorplanRequest();
+            funda.service.GetFloorplanRequest inValue = new funda.service.GetFloorplanRequest();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.soortAanbod = soortAanbod;
-            return ((funda.Services.IAanbod)(this)).GetFloorplanAsync(inValue);
+            return ((funda.service.IAanbod)(this)).GetFloorplanAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.GetFloorplanHtml5Response> funda.Services.IAanbod.GetFloorplanHtml5Async(funda.Services.GetFloorplanHtml5Request request)
+        System.Threading.Tasks.Task<funda.service.GetFloorplanHtml5Response> funda.service.IAanbod.GetFloorplanHtml5Async(funda.service.GetFloorplanHtml5Request request)
         {
             return base.Channel.GetFloorplanHtml5Async(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.GetFloorplanHtml5Response> GetFloorplanHtml5Async(string key, long globalId, funda.Services.SoortAanbod soortAanbod)
+        public System.Threading.Tasks.Task<funda.service.GetFloorplanHtml5Response> GetFloorplanHtml5Async(string key, long globalId, funda.service.SoortAanbod soortAanbod)
         {
-            funda.Services.GetFloorplanHtml5Request inValue = new funda.Services.GetFloorplanHtml5Request();
+            funda.service.GetFloorplanHtml5Request inValue = new funda.service.GetFloorplanHtml5Request();
             inValue.key = key;
             inValue.globalId = globalId;
             inValue.soortAanbod = soortAanbod;
-            return ((funda.Services.IAanbod)(this)).GetFloorplanHtml5Async(inValue);
+            return ((funda.service.IAanbod)(this)).GetFloorplanHtml5Async(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.GetNextVideoForAssessmentResponse> funda.Services.IAanbod.GetNextVideoForAssessmentAsync(funda.Services.GetNextVideoForAssessmentRequest request)
+        System.Threading.Tasks.Task<funda.service.GetNextVideoForAssessmentResponse> funda.service.IAanbod.GetNextVideoForAssessmentAsync(funda.service.GetNextVideoForAssessmentRequest request)
         {
             return base.Channel.GetNextVideoForAssessmentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.GetNextVideoForAssessmentResponse> GetNextVideoForAssessmentAsync(string key, string username, int exclusiveDurationInSeconds)
+        public System.Threading.Tasks.Task<funda.service.GetNextVideoForAssessmentResponse> GetNextVideoForAssessmentAsync(string key, string username, int exclusiveDurationInSeconds)
         {
-            funda.Services.GetNextVideoForAssessmentRequest inValue = new funda.Services.GetNextVideoForAssessmentRequest();
+            funda.service.GetNextVideoForAssessmentRequest inValue = new funda.service.GetNextVideoForAssessmentRequest();
             inValue.key = key;
             inValue.username = username;
             inValue.exclusiveDurationInSeconds = exclusiveDurationInSeconds;
-            return ((funda.Services.IAanbod)(this)).GetNextVideoForAssessmentAsync(inValue);
+            return ((funda.service.IAanbod)(this)).GetNextVideoForAssessmentAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SaveAssessmentResponse> funda.Services.IAanbod.SaveAssessmentAsync(funda.Services.SaveAssessmentRequest request)
+        System.Threading.Tasks.Task<funda.service.SaveAssessmentResponse> funda.service.IAanbod.SaveAssessmentAsync(funda.service.SaveAssessmentRequest request)
         {
             return base.Channel.SaveAssessmentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SaveAssessmentResponse> SaveAssessmentAsync(string key, string username, funda.Services.VideoAssessment videoAssessment)
+        public System.Threading.Tasks.Task<funda.service.SaveAssessmentResponse> SaveAssessmentAsync(string key, string username, funda.service.VideoAssessment videoAssessment)
         {
-            funda.Services.SaveAssessmentRequest inValue = new funda.Services.SaveAssessmentRequest();
+            funda.service.SaveAssessmentRequest inValue = new funda.service.SaveAssessmentRequest();
             inValue.key = key;
             inValue.username = username;
             inValue.videoAssessment = videoAssessment;
-            return ((funda.Services.IAanbod)(this)).SaveAssessmentAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SaveAssessmentAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.GetToppositieObjectsResponse> funda.Services.IAanbod.GetToppositieObjectsAsync(funda.Services.GetToppositieObjectsRequest request)
+        System.Threading.Tasks.Task<funda.service.GetToppositieObjectsResponse> funda.service.IAanbod.GetToppositieObjectsAsync(funda.service.GetToppositieObjectsRequest request)
         {
             return base.Channel.GetToppositieObjectsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.GetToppositieObjectsResponse> GetToppositieObjectsAsync(string key, string zo)
+        public System.Threading.Tasks.Task<funda.service.GetToppositieObjectsResponse> GetToppositieObjectsAsync(string key, string zo)
         {
-            funda.Services.GetToppositieObjectsRequest inValue = new funda.Services.GetToppositieObjectsRequest();
+            funda.service.GetToppositieObjectsRequest inValue = new funda.service.GetToppositieObjectsRequest();
             inValue.key = key;
             inValue.zo = zo;
-            return ((funda.Services.IAanbod)(this)).GetToppositieObjectsAsync(inValue);
+            return ((funda.service.IAanbod)(this)).GetToppositieObjectsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SubmitReageerFormResponse> funda.Services.IAanbod.SubmitReageerFormAsync(funda.Services.SubmitReageerFormRequest request)
+        System.Threading.Tasks.Task<funda.service.SubmitReageerFormResponse> funda.service.IAanbod.SubmitReageerFormAsync(funda.service.SubmitReageerFormRequest request)
         {
             return base.Channel.SubmitReageerFormAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SubmitReageerFormResponse> SubmitReageerFormAsync(string key, funda.Services.ReageerPublishItem item)
+        public System.Threading.Tasks.Task<funda.service.SubmitReageerFormResponse> SubmitReageerFormAsync(string key, funda.service.ReageerPublishItem item)
         {
-            funda.Services.SubmitReageerFormRequest inValue = new funda.Services.SubmitReageerFormRequest();
+            funda.service.SubmitReageerFormRequest inValue = new funda.service.SubmitReageerFormRequest();
             inValue.key = key;
             inValue.item = item;
-            return ((funda.Services.IAanbod)(this)).SubmitReageerFormAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SubmitReageerFormAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SubmitBezichtigingFormResponse> funda.Services.IAanbod.SubmitBezichtigingFormAsync(funda.Services.SubmitBezichtigingFormRequest request)
+        System.Threading.Tasks.Task<funda.service.SubmitBezichtigingFormResponse> funda.service.IAanbod.SubmitBezichtigingFormAsync(funda.service.SubmitBezichtigingFormRequest request)
         {
             return base.Channel.SubmitBezichtigingFormAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SubmitBezichtigingFormResponse> SubmitBezichtigingFormAsync(string key, funda.Services.BezichtigingPublishItem item)
+        public System.Threading.Tasks.Task<funda.service.SubmitBezichtigingFormResponse> SubmitBezichtigingFormAsync(string key, funda.service.BezichtigingPublishItem item)
         {
-            funda.Services.SubmitBezichtigingFormRequest inValue = new funda.Services.SubmitBezichtigingFormRequest();
+            funda.service.SubmitBezichtigingFormRequest inValue = new funda.service.SubmitBezichtigingFormRequest();
             inValue.key = key;
             inValue.item = item;
-            return ((funda.Services.IAanbod)(this)).SubmitBezichtigingFormAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SubmitBezichtigingFormAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<funda.Services.SubmitBrochureAanvraagFormResponse> funda.Services.IAanbod.SubmitBrochureAanvraagFormAsync(funda.Services.SubmitBrochureAanvraagFormRequest request)
+        System.Threading.Tasks.Task<funda.service.SubmitBrochureAanvraagFormResponse> funda.service.IAanbod.SubmitBrochureAanvraagFormAsync(funda.service.SubmitBrochureAanvraagFormRequest request)
         {
             return base.Channel.SubmitBrochureAanvraagFormAsync(request);
         }
         
-        public System.Threading.Tasks.Task<funda.Services.SubmitBrochureAanvraagFormResponse> SubmitBrochureAanvraagFormAsync(string key, funda.Services.BrochureAanvraagPublishItem item)
+        public System.Threading.Tasks.Task<funda.service.SubmitBrochureAanvraagFormResponse> SubmitBrochureAanvraagFormAsync(string key, funda.service.BrochureAanvraagPublishItem item)
         {
-            funda.Services.SubmitBrochureAanvraagFormRequest inValue = new funda.Services.SubmitBrochureAanvraagFormRequest();
+            funda.service.SubmitBrochureAanvraagFormRequest inValue = new funda.service.SubmitBrochureAanvraagFormRequest();
             inValue.key = key;
             inValue.item = item;
-            return ((funda.Services.IAanbod)(this)).SubmitBrochureAanvraagFormAsync(inValue);
+            return ((funda.service.IAanbod)(this)).SubmitBrochureAanvraagFormAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

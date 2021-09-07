@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-
-using funda.Services;
 using Microsoft.Extensions.Options;
+using funda.service;
 
 namespace funda.razor.Pages
 {

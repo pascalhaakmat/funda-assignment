@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using funda.Services;
+using funda.service;
 
 namespace funda
 {

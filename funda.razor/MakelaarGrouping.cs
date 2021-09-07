@@ -1,5 +1,5 @@
 using System.Linq;
-using funda.Services;
+using funda.service;
 using System.Collections.Generic;
 
 namespace funda.razor
